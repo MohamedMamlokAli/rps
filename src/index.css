@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+.z-negative {
+  z-index: -1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* progress::-webkit-progress-bar {
+  background-color: #f4f4f4;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.048);
+  bo
+  width:200px
+  border-radius: 50%;der-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
 }
+progress::-webkit-progress-value {
+  background-color: #3cb4ab !important;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+} */
+body {
+  overflow: hidden;
+}
+.content {
+  @apply text-gray-800 space-y-3 flex flex-col rounded-xl text-center items-center bg-white py-12 border border-gray-100 relative bottom-4;
+}
+.firstBorder {
+  border: 10px solid rgba(246, 246, 246, 0.76);
+  border-radius: 50%;
+}
+.secondBorder {
+  border: 5px solid rgba(255, 255, 255, 0.651);
+  width: 200px;
+  border-radius: 50%;
+}
+.thirdBorder {
+  border: 3px solid rgba(250, 250, 250, 0.808);
+  width: 200px;
+  border-radius: 50%;
+}
+.circleBorder {
+  border-width: 1rem;
+}
+@tailwind utilities;
